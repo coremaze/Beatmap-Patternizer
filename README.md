@@ -1,2 +1,4 @@
 # Beatmap-Patternizer
-Attempts to add patterns to existing osu! beatmaps for practice
+   Usage: Patternize.py <beatmap>
+
+Patternize will create a new beatmap using the pattern .osu files places in the "Patterns" folder.
