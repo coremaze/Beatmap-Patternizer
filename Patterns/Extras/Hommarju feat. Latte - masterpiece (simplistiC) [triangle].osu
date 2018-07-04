@@ -1,0 +1,75 @@
+osu file format v14
+
+[General]
+AudioFilename: 14 masterpiece.mp3
+AudioLeadIn: 0
+PreviewTime: 179619
+Countdown: 0
+SampleSet: Normal
+StackLeniency: 0.4
+Mode: 0
+LetterboxInBreaks: 1
+WidescreenStoryboard: 1
+
+[Editor]
+DistanceSpacing: 1.6
+BeatDivisor: 4
+GridSize: 8
+TimelineZoom: 1
+
+[Metadata]
+Title:masterpiece
+TitleUnicode:masterpiece
+Artist:Hommarju feat. Latte
+ArtistUnicode:Hommarju feat. Latte
+Creator:simplistiC
+Version:triangle
+Source:To Aru Majutsu no Index
+Tags:ignorethis exit trance presents speed anime best 7
+BeatmapID:0
+BeatmapSetID:12483
+
+[Difficulty]
+HPDrainRate:6
+CircleSize:4
+OverallDifficulty:8
+ApproachRate:8
+SliderMultiplier:1.8
+SliderTickRate:0.5
+
+[Events]
+//Background and Video events
+0,0,"untitled3.jpg",0,0
+//Break Periods
+//Storyboard Layer 0 (Background)
+//Storyboard Layer 1 (Fail)
+//Storyboard Layer 2 (Pass)
+//Storyboard Layer 3 (Foreground)
+//Storyboard Sound Samples
+
+[TimingPoints]
+1446,333.333333333333,4,1,1,100,1,0
+22945,-100,4,2,1,100,0,0
+78372,-100,4,1,1,100,0,0
+100279,-100,4,2,1,100,0,0
+111945,-100,4,2,1,70,0,0
+113445,-100,4,2,1,70,0,1
+134779,-100,4,2,1,60,0,0
+155945,-200,4,2,1,0,0,0
+158195,-100,4,1,1,51,0,0
+178705,-100,4,1,1,100,0,0
+180112,-100,4,1,1,100,0,1
+202779,-100,4,1,1,100,0,0
+
+
+[Colours]
+Combo1 : 87,147,81
+Combo2 : 42,48,80
+Combo3 : 255,77,5
+Combo4 : 113,205,255
+Combo5 : 242,178,212
+
+[HitObjects]
+256,112,16612,5,0,0:0:0:0:
+328,232,16779,1,8,0:0:0:0:
+184,232,16946,5,0,0:0:0:0:

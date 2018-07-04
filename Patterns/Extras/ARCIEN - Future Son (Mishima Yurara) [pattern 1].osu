@@ -1,0 +1,95 @@
+osu file format v14
+
+[General]
+AudioFilename: ALMONATHAN.mp3
+AudioLeadIn: 2000
+PreviewTime: 12436
+Countdown: 0
+SampleSet: None
+StackLeniency: 0.7
+Mode: 0
+LetterboxInBreaks: 0
+WidescreenStoryboard: 1
+
+[Editor]
+DistanceSpacing: 0.9
+BeatDivisor: 4
+GridSize: 4
+TimelineZoom: 2.7
+
+[Metadata]
+Title:Future Son
+TitleUnicode:Future Son
+Artist:ARCIEN
+ArtistUnicode:ARCIEN
+Creator:Mishima Yurara
+Version:pattern 1
+Source:
+Tags:edm electronic_dance_music bass dance music donkey kong country dkc diddy syntact N_a_s_y_a nasya vinxis
+BeatmapID:0
+BeatmapSetID:357466
+
+[Difficulty]
+HPDrainRate:8
+CircleSize:3.8
+OverallDifficulty:8.5
+ApproachRate:9
+SliderMultiplier:1.9
+SliderTickRate:1
+
+[Events]
+//Background and Video events
+0,0,"thats some deep shit right there.jpg",0,0
+//Break Periods
+//Storyboard Layer 0 (Background)
+//Storyboard Layer 1 (Fail)
+//Storyboard Layer 2 (Pass)
+//Storyboard Layer 3 (Foreground)
+//Storyboard Sound Samples
+
+[TimingPoints]
+33,400,4,3,1,58,1,0
+12833,-100,4,3,1,58,0,0
+13633,-133.333333333333,4,3,1,58,0,0
+14033,-100,4,3,1,58,0,0
+15633,-133.333333333333,4,3,1,58,0,0
+16033,-100,4,3,1,58,0,0
+16833,-133.333333333333,4,3,1,58,0,0
+17233,-100,4,3,1,58,0,0
+20033,-133.333333333333,4,3,1,58,0,0
+20433,-100,4,3,1,58,0,0
+22033,-133.333333333333,4,3,1,58,0,0
+22433,-100,4,3,1,58,0,0
+23233,-133.333333333333,4,3,1,58,0,0
+23633,-200,4,3,1,58,0,0
+24833,-133.333333333333,4,3,1,58,0,0
+25633,-100,4,3,1,58,0,0
+26433,-133.333333333333,4,3,1,58,0,0
+28833,-100,4,3,1,58,0,0
+29633,-133.333333333333,4,3,1,58,0,0
+32033,-100,4,3,1,58,0,0
+32833,-133.333333333333,4,3,1,58,0,0
+33233,-100,4,3,1,58,0,0
+36033,-133.333333333333,4,3,1,58,0,0
+36433,-200,4,3,1,58,0,0
+37633,-133.333333333333,4,3,1,58,0,0
+41233,-100,4,3,1,58,0,0
+42433,-133.333333333333,4,3,1,58,0,0
+54033,-100,4,3,1,58,0,0
+55233,-133.333333333333,4,3,1,58,0,0
+
+
+[Colours]
+Combo1 : 0,62,62
+Combo2 : 215,255,174
+Combo3 : 0,102,51
+Combo4 : 245,255,179
+
+[HitObjects]
+101,166,26833,5,4,0:0:0:0:
+195,320,27033,1,0,0:0:0:0:
+341,226,27233,1,0,0:0:0:0:
+101,166,27433,1,0,0:0:0:0:
+195,320,27633,1,0,0:0:0:0:
+341,226,27833,1,0,0:0:0:0:
+147,244,28033,1,2,0:0:0:0:

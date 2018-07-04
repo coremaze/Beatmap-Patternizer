@@ -1,0 +1,81 @@
+osu file format v14
+
+[General]
+AudioFilename: kakumei.mp3
+AudioLeadIn: 0
+PreviewTime: 60085
+Countdown: 0
+SampleSet: Soft
+StackLeniency: 0.7
+Mode: 0
+LetterboxInBreaks: 0
+WidescreenStoryboard: 1
+
+[Editor]
+Bookmarks: 24099
+DistanceSpacing: 1.2
+BeatDivisor: 2
+GridSize: 4
+TimelineZoom: 1.4
+
+[Metadata]
+Title:Shikaku Kakumei
+TitleUnicode:四角革命
+Artist:soutaiseiriron
+ArtistUnicode:相対性理論
+Creator:Deppyforce
+Version:wide angle set 2
+Source:
+Tags:theory of relativity square revolution やくしまる えつこ yakushimaru etsuko ハイファイ新書 hi-fi anatomia j-pop kayōkyoku kayokyoku mkguh kalibe fcl
+BeatmapID:0
+BeatmapSetID:446062
+
+[Difficulty]
+HPDrainRate:6.6
+CircleSize:2
+OverallDifficulty:8.5
+ApproachRate:9.1
+SliderMultiplier:1
+SliderTickRate:1
+
+[Events]
+//Background and Video events
+0,0,"bg.jpg",0,0
+//Break Periods
+//Storyboard Layer 0 (Background)
+//Storyboard Layer 1 (Fail)
+//Storyboard Layer 2 (Pass)
+//Storyboard Layer 3 (Foreground)
+//Storyboard Sound Samples
+
+[TimingPoints]
+24085,375,4,2,1,40,1,0
+60085,-83.3333333333333,4,2,1,50,0,1
+63460,-76.9230769230769,4,2,1,50,0,1
+63835,-64.5161290322581,4,2,1,50,0,1
+64210,-55.5555555555556,4,2,1,50,0,1
+64585,-83.3333333333333,4,2,1,50,0,1
+66460,-76.9230769230769,4,2,1,50,0,1
+66835,-64.5161290322581,4,2,1,50,0,1
+67210,-55.5555555555556,4,2,1,50,0,1
+67585,-83.3333333333333,4,2,1,50,0,1
+78460,-76.9230769230769,4,2,1,50,0,1
+78835,-64.5161290322581,4,2,1,50,0,1
+79210,-55.5555555555556,4,2,1,50,0,1
+79585,-83.3333333333333,4,2,1,50,0,1
+83897,-100,4,2,1,50,0,0
+
+
+[Colours]
+Combo1 : 149,221,255
+Combo2 : 153,204,204
+Combo3 : 157,255,221
+Combo4 : 222,222,188
+
+[HitObjects]
+117,380,27085,5,0,0:0:0:0:
+28,265,27273,1,0,0:0:0:0:
+69,110,27460,1,8,0:0:0:0:
+97,380,27648,5,0,0:0:0:0:
+8,265,27835,1,0,0:0:0:0:
+49,110,28023,1,0,0:0:0:0:

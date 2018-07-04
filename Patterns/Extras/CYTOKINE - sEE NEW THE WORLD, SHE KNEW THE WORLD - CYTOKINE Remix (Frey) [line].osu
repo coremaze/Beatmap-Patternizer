@@ -1,0 +1,68 @@
+osu file format v14
+
+[General]
+AudioFilename: sEE NEW THE WORLD, SHE KNEW THE WORLD - CYTOKINE Remix - itori.mp3
+AudioLeadIn: 0
+PreviewTime: 71549
+Countdown: 0
+SampleSet: Soft
+StackLeniency: 0.3
+Mode: 0
+LetterboxInBreaks: 0
+WidescreenStoryboard: 1
+
+[Editor]
+DistanceSpacing: 1.2
+BeatDivisor: 4
+GridSize: 4
+TimelineZoom: 1
+
+[Metadata]
+Title:sEE NEW THE WORLD, SHE KNEW THE WORLD - CYTOKINE Remix
+TitleUnicode:sEE NEW THE WORLD, SHE KNEW THE WORLD - CYTOKINE Remix
+Artist:CYTOKINE
+ArtistUnicode:CYTOKINE
+Creator:Frey
+Version:line
+Source:東方Project
+Tags:th11 BACKFLASH Audibility itori Touhou Zun Comiket 80 C80 隣人 Linjin 東方地霊殿 Subterranean Animism ハルトマンの妖怪少女 Hartmann's Youkai Girl 古明地 こいし Komeiji Koishi
+BeatmapID:0
+BeatmapSetID:442378
+
+[Difficulty]
+HPDrainRate:6.5
+CircleSize:4
+OverallDifficulty:7
+ApproachRate:8
+SliderMultiplier:1.8
+SliderTickRate:1
+
+[Events]
+//Background and Video events
+0,0,"komeji.jpg",0,0
+//Break Periods
+//Storyboard Layer 0 (Background)
+//Storyboard Layer 1 (Fail)
+//Storyboard Layer 2 (Pass)
+//Storyboard Layer 3 (Foreground)
+//Storyboard Sound Samples
+
+[TimingPoints]
+438,444.444444444444,4,2,0,80,1,0
+99993,-100,4,2,0,85,0,1
+128437,-100,4,2,0,80,0,0
+199549,-100,4,2,0,85,0,1
+227993,-100,4,2,0,80,0,0
+
+
+[Colours]
+Combo1 : 170,143,177
+Combo2 : 45,125,210
+Combo3 : 225,75,125
+Combo4 : 255,176,145
+Combo5 : 87,255,171
+
+[HitObjects]
+44,160,438,5,4,0:0:0:0:
+168,132,660,1,0,0:0:0:0:
+292,104,882,1,2,0:0:0:0:

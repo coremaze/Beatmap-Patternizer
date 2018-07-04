@@ -1,0 +1,83 @@
+osu file format v14
+
+[General]
+AudioFilename: Oraoraora.mp3
+AudioLeadIn: 0
+PreviewTime: 48572
+Countdown: 0
+SampleSet: Normal
+StackLeniency: 0.4
+Mode: 0
+LetterboxInBreaks: 0
+WidescreenStoryboard: 1
+
+[Editor]
+DistanceSpacing: 0.8
+BeatDivisor: 4
+GridSize: 4
+TimelineZoom: 2.7
+
+[Metadata]
+Title:JoJo Sono Chi no Kioku~end of THE WORLD~
+TitleUnicode:ジョジョ その血の記憶~end of THE WORLD~
+Artist:JO*STARS ~TOMMY, Coda, JIN~
+ArtistUnicode:JO☆STARS ～TOMMY, Coda, JIN～
+Creator:Atsuro
+Version:single star
+Source:JoJo's Bizarre Adventure: Stardust Crusaders 2nd Season
+Tags:Kimyou na Bouken part 3 Opening ジョジョの奇妙な冒険 スターダストクルセイダース handsome deetz TV size Hiroaki "TOMMY" Tominaga Hashimoto Jin
+BeatmapID:0
+BeatmapSetID:269969
+
+[Difficulty]
+HPDrainRate:8
+CircleSize:4.4
+OverallDifficulty:9
+ApproachRate:9.5
+SliderMultiplier:1.79999990463257
+SliderTickRate:1
+
+[Events]
+//Background and Video events
+0,0,"bg.png",0,0
+//Break Periods
+//Storyboard Layer 0 (Background)
+//Storyboard Layer 1 (Fail)
+//Storyboard Layer 2 (Pass)
+//Storyboard Layer 3 (Foreground)
+//Storyboard Sound Samples
+
+[TimingPoints]
+13459,272.727272727273,4,1,1,45,1,0
+14550,-83.3333333333333,4,1,1,65,0,0
+18231,-71.4285714285714,4,1,1,75,0,0
+18504,-62.5,4,1,1,85,0,0
+18913,-100,4,1,1,55,0,0
+24368,-83.3333333333333,4,1,1,70,0,1
+25459,-100,4,1,1,55,0,0
+26549,-83.3333333333333,4,1,1,70,0,1
+27640,-100,4,1,1,55,0,0
+32004,-125,4,2,1,45,0,0
+36368,-100,4,1,1,55,0,0
+49459,-83.3333333333333,4,1,1,70,0,1
+60368,-125,4,2,1,60,0,0
+64731,-83.3333333333333,4,1,1,70,0,1
+70186,-125,4,2,1,60,0,0
+73049,-100,4,1,1,60,0,0
+75640,-83.3333333333333,4,1,1,70,0,1
+80686,-200,4,1,1,60,0,0
+84368,-125,4,1,1,60,0,0
+
+
+[Colours]
+Combo1 : 217,163,0
+Combo2 : 122,0,244
+Combo3 : 166,0,0
+Combo4 : 0,0,160
+
+[HitObjects]
+132,384,75640,5,0,0:0:0:0:
+270,265,75777,1,0,0:0:0:0:
+89,280,75913,1,8,0:0:0:0:
+244,375,76049,1,0,0:0:0:0:
+174,207,76186,1,0,0:0:0:0:
