@@ -5,10 +5,12 @@ from Patterns import *
 from OsuConstants import *
 
 def LoadPatterns():
+    #Grabs patterns from the Patterns folder
     path = join(getcwd(), 'Patterns')
 
     loadedPatterns = {}
-    for f in glob('%s\\*.osu' % path):
+    search_path = join(path, '*.osu') #get all .osu files in that dir
+    for f in glob(search_path):
         pattern = Pattern()
         pattern.Load(f)
         pattern.SetCenterPoint(CENTER)
@@ -34,6 +36,8 @@ def PopSuitablePattern(patterns, length):
     for k in patterns:
         if k <= length and (not best or best < k):
             best = k
+    #Patterns are grouped by length
+    #move pattern to the back of its list
     bestPattern = patterns[best].pop(0)
     patterns[best].append(bestPattern)
     return bestPattern

@@ -39,7 +39,10 @@ def ApplyPatterns(mapFile):
         pastcircle = beatmap.circles[r[0]-1]
         futurecircle = beatmap.circles[r[1]]
 
-
+        #Make a bunch of potential patterns,
+        #rotate them to get the ends as far away from the other notes as possible,
+        #and then choose the one with the highest spacing at the ends
+        #The idea is that this is probably the least awkward to play.
         normalCandidate = pattern.Copy()
         
         HFlipCandidate = pattern.Copy()

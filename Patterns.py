@@ -13,6 +13,7 @@ class Pattern():
     def Import(self, circles):
         self.circles = copy.deepcopy(circles)
     def Spacing(self):
+        #get average spacing of a pattern
         space = 0.0
         num_lines = len(self.circles)-1
         for i in range(num_lines):
@@ -22,10 +23,12 @@ class Pattern():
         space /= num_lines
         return space
     def FindCenterPoint(self):
+        #Gets average location of a pattern
         x = average([c.x for c in self.circles])
         y = average([c.y for c in self.circles])
         return (x, y)
     def SetCenterPoint(self, point):
+        #moves a pattern to the center of the playfield
         pattern_center = self.FindCenterPoint()
         for circle in self.circles:
             circle.x = circle.x - pattern_center[0] + point[0]
@@ -33,6 +36,7 @@ class Pattern():
     def Copy(self):
         return copy.deepcopy(self)
     def ChangeSpacing(self, newSpacing):
+        #Scales a pattern to fit a new spacing
         centerpoint = self.FindCenterPoint()
         ratio = newSpacing/self.Spacing()
         for circle in self.circles:

@@ -22,6 +22,8 @@ class HitCircle():
         self.x = x
         self.y = y
     def Bound(self):
+        #restrain hitcircles to the playfield.
+        #they may have ended up outside the playfield during rotation
         if self.x < 0:
             self.x = 0
         elif self.x > WIDTH:
@@ -47,6 +49,7 @@ class BeatMap():
             raise BeatmapLoadError
 
         HitObjectsLocation = lines.index('[HitObjects]')
+        TimingPointsLocation = lines.index('[TimingPoints]')
 
         header = lines[:HitObjectsLocation]
         for line in header:
@@ -61,6 +64,11 @@ class BeatMap():
                 continue
             circle = HitCircle().Parse(line)
             circles.append(circle)
+
+        #using this to figure out how big singletaps should be
+        firstTimingPoint = lines[TimingPointsLocation + 1]
+        self.milliseconds_per_beat = float(firstTimingPoint.split(',')[1])
+        print(f'ms per beat: {self.milliseconds_per_beat} ({(1/self.milliseconds_per_beat)*1000*60} BPM)')
             
         self.header = header
         self.hitObjectsLines = hitObjects
@@ -81,15 +89,18 @@ class BeatMap():
             f.write('\r\n'.encode('UTF-8'))
 
     def FindSingletaps(self):
-        #TODO: tweak this automatically to fit very high or low bpm songs
-        singleTapSlowest = 225 #Highish bpm
-        singleTapFastest = 114
+        beat_length = self.milliseconds_per_beat
 
-##        singleTapSlowest = int(60/(129*2)*1000)
-##        singleTapFastest = int(60/(131*2)*1000)
+        singletap_length = beat_length / 2
+
+        singleTapSlowest = int(singletap_length * 1.25)
+        singleTapFastest = int(singletap_length * 0.75)
+        
+##        singleTapSlowest = 225 #Highish bpm
+##        singleTapFastest = 114
         
         singleTapRange = range(singleTapFastest, singleTapSlowest+1)
-        lastdiff = 200
+        lastdiff = singletap_length #Just a starting value so we have something to work with on the first note.
         consecitive_singletaps = 0
         ranges = []
         for i in range(len(self.circles)-1):
@@ -99,27 +110,29 @@ class BeatMap():
             nextCircle = self.circles[i+1]
             nextdiff = nextCircle.time - thisCircle.time
 
-
+            #if not first note
             if i:
                 lastCircle = self.circles[i-1]
                 lastdiff = thisCircle.time - lastCircle.time
 
-            
-
-                
+            #this note and the last note are singletaps relative to each other, and this note is not a stream to the next
             if lastdiff in singleTapRange and nextdiff > singleTapFastest:
                 singletap = True
                 consecitive_singletaps += 1
+            #this note is a singletap relative to the next note, and isn't the end of a stream
             elif nextdiff in singleTapRange and lastdiff > singleTapFastest:
                 singletap = True
                 consecitive_singletaps += 1
+            #reset singletap counter due to too high or too low speed
             else:
                 consecitive_singletaps = 0
 
+            #ignore everything except hitcircles
             if not thisCircle.obType & 0x1:
-                consecitive_singletaps =0
+                consecitive_singletaps = 0
                 singletap = False
-                
+
+            #There could be two sections of singletaps separated by a large space instead of a stream    
             if consecitive_singletaps > 0 and lastdiff > singleTapSlowest:
                 consecitive_singletaps = 1
 
@@ -131,6 +144,7 @@ class BeatMap():
         return ranges
 
     def PastePattern(self, pattern, noterange):
+        #Copies a pattern's positions to some existing notes in another map
         for i in range(noterange[0], noterange[1]):
             try:
                 pCircle = pattern.circles[i-noterange[0]]
